@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-getDrawer({title: String, BuildContext context}) {
+getDrawer({BuildContext context}) {
   var pages = ['who_i_am', 'who_i_what_to_be', 'how_to_do_it'];
   return Drawer(
       child: ListView(

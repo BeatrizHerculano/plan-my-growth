@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plan_my_growth/pages/how_i_will_do_it.dart';
 import 'package:plan_my_growth/pages/who_i_am.dart';
 import 'package:plan_my_growth/pages/who_i_want_to_be.dart';
 
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => WhoIAm(),
         'who_i_am': (context) => WhoIAm(),
-        'who_i_what_to_be': (context) => WhoIWantToBe()
+        'who_i_what_to_be': (context) => WhoIWantToBe(),
+        'how_to_do_it': (context) => HowIWillDoIt()
       },
     );
   }
