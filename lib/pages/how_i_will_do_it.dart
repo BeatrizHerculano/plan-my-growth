@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:plan_my_growth/global.dart';
+import 'package:plan_my_growth/pages/create_journey.dart';
 import 'package:plan_my_growth/widgets/custom_drawer.dart';
 
 class HowIWillDoIt extends StatefulWidget {
+  static String route = "HowIWillDoIt";
   @override
   State<StatefulWidget> createState() {
     return HowIWillDoItState();
@@ -40,7 +42,7 @@ class HowIWillDoItState extends State<HowIWillDoIt> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          Navigator.of(context).pushNamed('create_journey');
+          Navigator.of(context).pushNamed(CreateJourney.route);
         },
       ),
     );

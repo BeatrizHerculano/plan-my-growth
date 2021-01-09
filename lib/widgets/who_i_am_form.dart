@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plan_my_growth/widgets/custom_text_field.dart';
 
 class WhoIAmForm extends StatefulWidget {
   @override
@@ -16,17 +17,14 @@ class _WhoIAmFormState extends State<WhoIAmForm> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextFormField(
-                maxLines: 20,
-                validator: (value) {
-                  if (value.isEmpty) {
-                    return 'Please enter some text';
-                  }
-                  return null;
-                },
-              ),
-            ),
+                padding: const EdgeInsets.all(8.0),
+                child: CustomTextField(
+                  hint: "Descreva quem você é agora e suas habilidades",
+                  maxLines: 15,
+                  validations: {
+                    (String value) => value.isEmpty: "Esse campo é obrigatório"
+                  },
+                )),
             Container(
               alignment: Alignment.centerRight,
               padding:

@@ -3,6 +3,7 @@ import 'package:plan_my_growth/widgets/custom_drawer.dart';
 import 'package:plan_my_growth/widgets/who_i_am_form.dart';
 
 class WhoIAm extends StatelessWidget {
+  static String route = "WhoIAm";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
